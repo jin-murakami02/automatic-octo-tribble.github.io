@@ -1,0 +1,62 @@
+#entete {
+    /* background-color: rgb(68, 0, 255); */
+     background-color: rgb(16, 40, 77);
+     
+     min-height: 1vh;
+     max-height: 28vh;
+     position: sticky;
+     top: 0;
+     /* Permet à la division #entete*/
+     z-index: 1000;
+}
+ 
+#entete header {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     position: relative;
+     height: 120px;
+}
+
+.titre{
+    font-family: monoton;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    font-size: 60px;
+    
+    
+    
+}
+
+#recherche{
+    width: 400px;
+    height: 30px;
+    border-radius: 30px;
+
+}
+
+header .test{
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+    position: relative;
+    
+    
+}
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+

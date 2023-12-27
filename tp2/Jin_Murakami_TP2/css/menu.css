@@ -1,0 +1,102 @@
+/*
+ <header>
+        <h1>TP2</h1>
+        
+        <input type="checkbox" id="chk_burger">
+        <label id="burger" for="chk_burger"><img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32"></label>
+        
+     <nav class="menu">
+        <a href="#menu">Menu</a>
+        <a href="#accueil">Accueil</a>
+        <a href="#inscritpion">Inscritption</a>
+        <a href="#tableau">Tableau</a>
+        <a href="#articles">Articles</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#vidéo">Vidéo</a>
+        <a href="#piedPage">Pied de page</a>
+     </nav>
+     </header>
+
+*/
+
+#burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.3rem;
+    height: 2.3rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transform: rotate(0deg);
+    transition: transform .25s;
+    position: relative;
+} 
+
+/* #burger { 
+    position: relative;
+    margin-left: auto;
+    width: 30px;
+    
+    margin-top: -70px;
+    margin-right: -100px;
+}*/
+
+#burger img {
+    position: absolute;
+    top: 0;
+    right:0;
+}
+
+#burger img:nth-of-type(1){
+    display: block;
+}
+
+#burger img:nth-of-type(2){
+    display: none;
+}
+
+#chk_burger {
+    display: none;
+}
+
+#chk_burger:checked ~ .menu {
+    transform: translateX(0); /* position naturel du menu */
+}
+
+#chk_burger:checked ~ #burger {
+    transform: rotate(90deg);
+}
+/* Permet de controler l'apparence du bouton burger deux possibilités:
+    ouvrir ou fermer
+    ouvrir: les trois barres horizontales apparait
+    fermer: le X apparait
+    */
+
+#chk_burger:checked ~ #burger img:nth-of-type(2){
+    display: block; /* active le x*/
+}
+
+#chk_burger:checked ~ #burger img:nth-of-type(1){
+    display: none; /* desactive les barres horixontales */
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transform: translateY(-240%); /* position qui cache le menu */
+    transition: transform 1s;
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 210px;
+    gap: 6px;
+    padding: 10px;
+    z-index: -1;
+    
+    
+}   
+
+.menu a {
+    color: white;
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/inscription.css">
+    <link rel="stylesheet" href="css/tableau.css">
+    <link rel="stylesheet" href="css/galerie.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Cutive+Mono&family=La+Belle+Aurore&family=Monoton&family=Pirata+One&family=Racing+Sans+One&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+
+
+    
+    <!--Section d'entete-->
+    <div class="" id="entete">
+      
+     <header> 
+      <img   class="test"   src="img/logo.png" alt="">
+      <h1 class="titre">Rent-a-car</h1>
+      
+     
+        
+        
+        
+        
+        <input id="recherche" type="text" name="" placeholder="Rechercher" >
+        
+        <input type="checkbox" id="chk_burger">
+        <label id="burger" for="chk_burger">
+          
+          <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000000" width="32" height="32">
+          <img src="https://s2.svgbox.net/hero-outline.svg?ic=x" width="32" height="32">
+          
+        </label>
+        <nav class="menu">
+        
+        <a href="#accueil">Accueil</a>
+        <a href="#inscritpion">Inscritption</a>
+        <a href="#tableau">Tableau</a>
+        <a href="#articles">Articles</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#vidéo">Vidéo</a>
+        <a href="#piedPage">Pied de page</a>
+        </nav>
+      
+     
+      
+     
+     </header>
+    </div>
+
+
+   
+
+    </div>
+    <!--Section d'accueil-->
+    <div class="global" id="accueil">
+     <section class="text">
+        <h1>Accueil</h1>
+        <p class="title">Rent-a-car</p>
+        <p class="name">Jin Murakami</p>
+        <p class="classe">582-1w1-Mise en page Web</p>
+        <p class="programme">Technique d'integration Multimédia</p>
+        <p class="école">Collège de Maisonneuve</p>
+        <p class="Github">Adresse Github</p>
+        <p class="session">Automne 2023</p>
+        
+     </section>
+    </div>
+
+    <!--Section d'inscription--> 
+    <div class="global" id="inscritpion">
+    <section class="inscritpion-text">
+    <h1>Inscritption</h1>
+    <input id="nom" class="input-field" type="text" placeholder="Nom & Nom de famille">
+    <input id="motDePasse" class="input-field" type="password" placeholder="Mot de passe">
+    <input id="email" class="input-field" type="text" placeholder="Adresse Courriel">
+    <input id="telephone" class="input-field" type="text" placeholder="Numéro de téléphone">
+
+    <button id="bouton" onclick="viderChamps()">S'INSCRIRE</button>
+    <script>
+      function viderChamps() {
+        document.getElementById('nom').value = '';
+        document.getElementById('motDePasse').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('telephone').value = '';
+      }
+    </script>
+    
+    
+   
+    </section>
+       </div>
+
+    <!--Section du tableau-->
+    <div class="global" id="tableau">
+      
+    <section class="tablo">
+    
+    <table>
+      <tr>
+         <th>Tarif</th>
+         <th>Par heure</th>
+         <th>Par mi-journée</th>
+         <th>Par Journée</th>
+         <th>Par semaine</th>
+      </tr>
+
+      <tr>
+         <th>Classe 1</th>
+         <th>20$</th>
+         <th>220$</th>
+         <th>420$</th>
+         <th>2900$</th>
+      </tr>
+
+      <tr>
+         <th>Classe 2</th>
+         <th>30$</th>
+         <th>340$</th>
+         <th>660$</th>
+         <th>4500$</th>
+      </tr>
+
+      <tr>
+         <th>Classe 3</th>
+         <th>50$</th>
+         <th>550$</th>
+         <th>980$</th>
+         <th>6600$</th>
+
+      </tr>
+
+      <tr>
+         <th>Classe 4</th>
+         <th>70$</th>
+         <th>820$</th>
+         <th>1500$</th>
+         <th>8500$</th>
+      </tr>
+
+      <tr>
+         <th>Classe 5</th>
+         <th>100$</th>
+         <th>1000$</th>
+         <th>2200$</th>
+         <th>15 000$</th>
+      </tr>
+    </table>
+
+    </section>
+    </div>
+
+    <!--Section d'articles-->
+    <div class="global" id="articles">
+      <section class="article">
+          <div class="article-text">
+              <h1>Un monstre sur la route</h1>
+              <h2>La Bugatti Bolide bientôt disponible chez Rent-a-car</h2>
+              <div class="text-columns">
+                  <p>Depuis sa création, Rent-A-Car s'est imposée comme un acteur incontournable dans le secteur de la location de voitures de luxe. En perpétuelle quête d'innovation et d'excellence, cette entreprise a toujours veillé à offrir à ses clients des véhicules qui ne sont pas seulement des moyens de transport, mais des symboles de prestige et de performance. La récente acquisition de la Bugatti Bolide par Rent-A-Car marque une étape clé dans cette quête, en ajoutant une dimension supplémentaire à son offre déjà exceptionnelle. Ce bijou de la technologie automobile représente une fusion parfaite entre élégance et puissance, faisant de chaque trajet une expérience unique en son genre. La Bugatti Bolide, avec ses lignes épurées et son allure féroce, est plus qu'une simple addition à la flotte de Rent-A-Car ; elle est le symbole d'un engagement sans faille envers le luxe et l'exclusivité. Conçue pour les amateurs de vitesse et d'innovation, la Bolide transcende les normes traditionnelles du marché de la location de luxe. Ce choix audacieux de Rent-A-Car reflète une compréhension profonde des désirs de sa clientèle. Dans un monde où l'exceptionnel est toujours recherché, la Bolide offre une opportunité de se distinguer, de vivre des moments inoubliables et de savourer la quintessence du design automobile. L'intégration de la Bugatti Bolide dans la flotte de Rent-A-Car n'est pas un simple coup de marketing ; c'est une stratégie pensée et exécutée avec soin. Rent-A-Car a toujours mis un point d'honneur à anticiper les tendances du marché et à s'adapter rapidement aux évolutions des besoins de ses clients. En choisissant la Bolide, l'entreprise démontre sa capacité à aller au-delà des attentes, en proposant une expérience de location qui ne se limite pas à la fonctionnalité, mais qui touche à l'émotion et à l'exceptionnel.</p>
+                  
+                  <p>L'ajout de la Bugatti Bolide à la flotte de Rent-A-Car a immédiatement eu un impact significatif sur le marché de la location de voitures de luxe. Cette décision a placé Rent-A-Car au centre des discussions dans le monde du luxe et de l'automobile, attirant l'attention des connaisseurs et des passionnés. L'arrivée de la Bolide a également influencé la perception des clients sur ce que devrait être une expérience de location haut de gamme. La Bolide est plus qu'une voiture ; c'est une déclaration de style, une œuvre d'art en mouvement qui offre une performance inégalée et une sensation de conduite hors du commun. Le choix de la Bugatti Bolide par Rent-A-Car témoigne de la volonté de l'entreprise de repousser les limites de l'innovation et de l'exclusivité. La Bolide est un véhicule qui défie les conventions, combinant une technologie de pointe avec un design qui captive. En l'intégrant à sa flotte, Rent-A-Car ne propose pas seulement une voiture d'exception ; elle offre une expérience transformative, capable de changer la manière dont ses clients perçoivent la location de voiture. En outre, la présence de la Bolide chez Rent-A-Car ouvre de nouvelles perspectives commerciales pour l'entreprise. Elle attire une clientèle diversifiée, allant des amateurs de supercars aux personnalités influentes qui cherchent à se distinguer par leurs choix. Cette expansion démographique élargit le marché potentiel de Rent-A-Car et renforce sa position de leader dans l'industrie de la location de voitures de luxe. En conclusion, l'acquisition de la Bugatti Bolide par Rent-A-Car redéfinit les standards de la location de voitures de luxe. Cette démarche audacieuse illustre la capacité de l'entreprise à innover et à offrir des expériences inégalées à ses clients. La Bolide n'est pas seulement une addition à la flotte de Rent-A-Car ; c'est une révolution dans l'industrie de la location de voitures, une invitation à vivre l'extraordinaire et à explorer les limites du possible.</p>
+              </div>
+          </div>
+          <img src="img/bolide.jpg" alt="Bugatti Bolide">
+      </section>
+  </div>
+  
+
+
+    <!--Section de galerie-->
+    <div class="global" id="galerie">
+    <section class="slide-container">
+      
+    
+    
+    <div class="slide">
+      <figure>
+      <img src="img/car1.jpg" alt="">
+      <figcaption>McLaren 720S</figcaption>
+      <figcaption>classe: 4 </figcaption>
+      </figure>
+    </div>
+    
+    <div class="slide">
+      <figure>
+      <img src="img/car2.jpg" alt="">
+      <figcaption>Ferrari LaFerrari</figcaption> 
+      <figcaption>classe: 5 </figcaption>
+      </figure>
+    </div>
+
+    <div class="slide">
+      <figure>
+      <img src="img/car3.jpg" alt="">
+      <figcaption>Rolls-Royce phantom</figcaption>
+      <figcaption>classe: 4 </figcaption>
+      </figure>
+    </div>
+
+    <div class="slide">
+      <figure>
+      <img src="img/car4.jpg" alt="">
+      <figcaption>Aston Martin DBR22</figcaption>
+      <figcaption>classe: 5 </figcaption>
+      </figure>
+    </div>
+
+    <div class="slide">
+      <figure>
+      <img src="img/car5.jpg" alt="">
+      <figcaption>Bugatti Chiron</figcaption>
+      <figcaption>classe: 5 </figcaption>
+      </figure>
+    </div>
+
+    <div class="slide">
+      <figure>
+      <img src="img/car6.jpg" alt="">
+      <figcaption>Lamborghini Aventador SVJ</figcaption>
+      <figcaption>classe: 4 </figcaption>
+      </figure>
+    </div>
+
+    <div class="slide">
+      <figure>
+      <img src="img/car7.jpg" alt="">
+      <FIGCaption>Lamborghini Urus</FIGCaption>
+      <figcaption>classe: 4 </figcaption>
+      </figure>
+    </div>
+
+    <div class="slide">
+      <figure>
+      <img src="img/car8.jpg" alt="">
+      <figcaption>Ferrari F40 Liberty Walk</figcaption>
+      <figcaption>classe: 5 </figcaption>
+      </figure>
+    </div>
+
+    <div class="slide">
+      <figure>
+      <img src="img/car9.jpg" alt="">
+      <figcaption>Porsche 911 GT3</figcaption>
+      <figcaption>classe: 4 </figcaption>
+      </figure>
+    </div>
+
+    <div class="slide">
+      <figure>
+      <img src="img/car10.jpg" alt="">
+      <figcaption>Mercedes-AMG G63 4x4 Squared</figcaption>
+      <figcaption>classe: 5 </figcaption>
+      </figure>
+    </div>
+
+    <div class="slide">
+      <figure>
+      <img src="img/car11.jpg" alt="">
+      <figcaption>Posche Macan</figcaption>
+      <figcaption>classe: 1 </figcaption>
+      </figure>
+    </div>
+
+    <div class="slide">
+      <figure>
+      <img src="img/car12.jpg" alt="">
+      <figcaption>BMW M3</figcaption>
+      <figcaption>classe: 2 </figcaption>
+      </figure>
+    </div>
+
+    <div class="slide">
+      <figure>
+      <img src="img/car13.jpg" alt="">
+      <figcaption>Mercedes-AMG G63</figcaption>
+      <figcaption>classe: 3 </figcaption>
+      </figure>
+    </div>
+    
+    </section>
+    </div>
+
+    <!--Section de vidéo-->
+    <div class="global" id="vidéo">
+    <section class="vid">   
+     
+     <video controls src="video/RR.mp4" height="380" width="480px"></video>
+     <video controls src="video/porsche.mp4" height="380" width="480px"></video>
+     <video controls src="video/svj.mp4" height="380" width="480px"></video>
+    </section>  
+    </div>
+
+    <!-- Section de pied de page -->
+    <div class="" id="piedPage">
+
+      <footer>
+    
+       
+       <div class="footer-content">
+        <ul class="contacts">
+         <h3>Contact Us</h3>
+         <p>Email: lhtrinh@cmaisonneuve.qc.ca</p>
+         <p>Adress: 6220, rue Sherbrooke Est </p>
+         <p>Phone:(514) 254-7131 </p>
+        </ul>
+       </div>
+     
+       <div class="footer-content">
+        <h3>Quick Links</h3>
+        <ul class="links">
+          
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Products</a></li>
+        </ul>
+       </div>
+
+       <div class="footer-content">
+        <h3>Follow us</h3>
+        <ul class="social-icon">
+            <li><a href=""><img src="img/insta.png" alt="Instagram"></a></li>
+            <li><a href=""><img src="img/twitter-24.ico" alt="Twitter"></a></li>
+            <li><a href=""><img src="img/1221583_github_logo_media_social_icon.png" alt="GitHub"></a></li>
+            <li><a href=""><img src="img/734399_facebook_media_online_social_icon.png" alt="Facebook"></a></li>
+        </ul>
+       </div>
+
+       <div class="bottombar">
+        <p>&copy; 2023 your compagny . All rights reserved . Privacy Notice & Privacy Police </p> 
+
+       </div>
+
+     
+    
+
+   
+     </div>
+
+</footer>
+</body>
+</html>

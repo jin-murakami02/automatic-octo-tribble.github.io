@@ -1,0 +1,34 @@
+#galerie{
+    background-color:rgb(219, 219, 219) ;
+}
+
+.slide-container{
+    display: flex;
+    overflow: auto;
+    scroll-snap-type:x mandatory;
+    align-items: center;
+
+}
+.slide-container.slide{
+    scroll-snap-align:end ;
+}
+
+.slide-container img{
+    width: 930px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.slide-container figcaption{
+    display: flex;
+    text-align: center;
+}
+
+.slide-container h1{
+    text-align: center; 
+}
+
+.slide figcaption{
+    text-align: center;
+}
+

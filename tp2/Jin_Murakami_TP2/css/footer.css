@@ -1,0 +1,58 @@
+#piedPage footer {
+    background-color: #a7a7a7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    display: flex;
+    justify-content: center; /* Centre horizontalement les éléments */
+    align-items: center;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
+    min-height: 30vh;
+    max-height: 30vh;
+}
+
+
+
+#piedPage h3{
+  font-size: 30px;
+  
+  margin-bottom: 15px;
+}
+
+
+
+.footer-content{
+    
+    text-align: center;
+    margin: auto;
+    padding: 7px;
+    
+}
+ 
+
+.social-icon{
+    text-align: center;
+    padding: 0;
+}
+
+.social-icon li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.links{
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.bottombar {
+    text-align: center; /* Centre le texte dans .bottombar */
+    width: 100%; /* Assure que .bottombar prend toute la largeur */
+}
+
+
+
+
+
+ 

@@ -1,0 +1,11 @@
+#accueil{
+    background-color: rgb(219, 219, 219);
+}
+
+.text{
+    font-size: 65px;
+    display: flex;
+    flex-direction: column;
+    font-family:Pirata One ;
+    margin-top: -60px;
+   }

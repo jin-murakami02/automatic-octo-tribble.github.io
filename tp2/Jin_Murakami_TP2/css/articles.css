@@ -1,0 +1,6 @@
+#articles{
+    background-color:rgb(219, 219, 219) ;
+    display: flex;
+    flex-direction: column;
+}
+

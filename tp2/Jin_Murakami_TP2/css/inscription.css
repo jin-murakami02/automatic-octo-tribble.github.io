@@ -1,0 +1,55 @@
+#inscritpion{
+    background-color: rgb(219, 219, 219);
+    
+
+}.inscription-text{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.input-field {
+    height: 45px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+#bouton{
+    height: 60px;
+    width: 350px;
+    border-radius:30px ;
+    background-color: rgb(0, 201, 0);
+    
+    
+    
+    
+   
+}
+
+
+
+.inscritpion-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    
+    
+
+}
+
+.inscritpion-text h1{
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    font-family: Pirata One;
+    
+    
+}
+
+#inscription input{
+    display: flex;
+    justify-content: center;
+}

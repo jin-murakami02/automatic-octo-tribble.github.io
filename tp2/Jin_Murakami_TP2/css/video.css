@@ -1,0 +1,14 @@
+#vidéo{
+    background-color:rgb(219, 219, 219) ;
+}
+
+.vid {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#vidéo video{
+     border: 1px black;
+}
